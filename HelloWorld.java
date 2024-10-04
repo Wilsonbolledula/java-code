@@ -1,18 +1,17 @@
-import java.util.Scanner;
-
-public class HelloWorld {
-
+ublic class HelloWorld {
     public static void main(String[] args) {
+        int number;
+        
+        // Check if an argument is provided
+        if (args.length > 0) {
+            // Parse the first argument as an integer
+            number = Integer.parseInt(args[0]);
+        } else {
+            // Set a default value if no argument is provided
+            number = 10; // You can change this to any default number
+            System.out.println("No number provided, using default: " + number);
+        }
 
-        // Creates a reader instance which takes
-        // input from standard input - keyboard
-        Scanner reader = new Scanner(System.in);
-        System.out.print("Enter a number: ");
-
-        // nextInt() reads the next integer from the keyboard
-        int number = reader.nextInt();
-
-        // println() prints the following line to the output screen
         System.out.println("You entered: " + number);
     }
 }
