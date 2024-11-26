@@ -8,7 +8,7 @@ public class HelloWorld {
             number = Integer.parseInt(args[0]);
         } else {
             // Set a default value if no argument is provided
-            number = 10; // You can change this to any default number
+            number = 1000; // You can change this to any default number
             System.out.println("No number provided, using default: " + number);
         }
 
